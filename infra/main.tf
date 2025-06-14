@@ -2,7 +2,7 @@ locals {
   name-suffix = "${var.region}-${var.environment}"
 }
 
-# Data element fetching the AMI ID of Ubuntu 20.04
+# # Data element fetching the AMI ID of Ubuntu 20.04
 data "aws_ami" "ubuntu" {
   most_recent = true
   filter {
